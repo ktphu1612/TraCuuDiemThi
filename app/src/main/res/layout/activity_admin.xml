@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KHU VỰC DÀNH CHO GIÁO VIÊN"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="#1565C0"/>
+
+    <EditText
+        android:id="@+id/edtAdminMaSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Sinh Viên (VD: A48546)"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/edtAdminTenSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Sinh Viên (VD: Phú)"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <Spinner
+            android:id="@+id/spnAdminNamHoc"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="#EEEEEE"/>
+
+        <Spinner
+            android:id="@+id/spnAdminHocKi"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="#EEEEEE"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edtAdminMonHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Môn Học"
+        android:layout_marginBottom="10dp"/>
+
+
+    <EditText
+        android:id="@+id/edtAdminDiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Điểm (VD: A, B, C...)"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnLuuDiem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#4B93CE"
+        android:text="ĐẨY ĐIỂM LÊN CLOUD"
+        android:textColor="#9E4E39"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+    <Button
+        android:id="@+id/btnXoaDiem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="XÓA ĐIỂM"
+        android:backgroundTint="#D32F2F"
+        android:textStyle="bold"/>
+
+</LinearLayout>
